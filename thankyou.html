@@ -11,8 +11,12 @@
   gtag('js', new Date());
 
   gtag('config', 'G-W6WBWL9H9F');
-  gtag('event', 'generate_lead', {
-  lead_source: 'website'
+  
+ const affiliate =
+localStorage.getItem("affiliate") || "direct";
+
+gtag('event', 'generate_lead', {
+  lead_source: affiliate
 });
 </script>
 

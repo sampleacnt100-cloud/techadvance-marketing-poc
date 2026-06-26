@@ -14,6 +14,17 @@
 </script>
 
 </head>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const affiliate = params.get("affiliate");
+
+if (affiliate) {
+    localStorage.setItem("affiliate", affiliate);
+    console.log("Affiliate:", affiliate);
+}
+</script>
+
 <body>
 
 <div class="container">
