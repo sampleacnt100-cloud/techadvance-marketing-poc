@@ -12,12 +12,14 @@
 
   gtag('config', 'G-W6WBWL9H9F');
   
- const affiliate =
-localStorage.getItem("affiliate") || "direct";
+ const affiliate = localStorage.getItem("affiliate") || "direct";
+ 
+ console.log("Affiliate:", affiliate);
 
-gtag('event', 'generate_lead', {
+ gtag('event', 'generate_lead', 
+ {
   lead_source: affiliate
-});
+ });
 </script>
 
 </head>
